@@ -1,0 +1,79 @@
+/* Объявляем grid-контейнер */
+.container { /* Задаём свойства элементов HTML-класса «контейнер» */
+    display: grid; /* Режим отображения меняем на «сетку» */ 
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    grid-column-gap: 10px;
+}
+/* Добавляем оформление grid-контейнеру: */
+.container {
+    border: 2px solid rgb(0, 0, 0); /* Обводим зелёной линией */
+    border-radius: 1px; /* Скругляем углы на 5 пикселей */
+}
+
+/* Добавляем оформление элементам grid-контейнера: */
+.container * {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 1px; /* Скругляем углы на 10 пикселей */
+    background-color: rgba(255, 255, 255, 0.5); /* Фон красим фиолетовым */
+    text-align: center; /* Контент размещаем в центре по горизонтали */
+}
+
+/*
+    Для разделения действий мы несколько раз объявили один и тот же элемент
+    .container. На самом деле все эти блоки — единое целое, и относятся к одному классу — container.
+*/
+
+
+.box1
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+.box2
+{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box3
+{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box10
+{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+
+}
+
+.box11
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
+
+.box12
+{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
